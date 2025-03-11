@@ -5,11 +5,13 @@ HOT project, including the [HOTOSM UI library](https://github.com/hotosm/ui).
 
 ## Assets
 
-Check the /assets folder for logos and font files.
+Check the `/assets` folder for logos and font files.
 
 ## Design
 
-You'll find the design system in Figma:
+Check `/pdf` folder for design.
+
+### Figma
 
 [https://www.figma.com/design/aen3pQ5270lRll444VI7TQ/HOTOSM-UI](https://www.figma.com/community/file/1481372694323405983)
 
