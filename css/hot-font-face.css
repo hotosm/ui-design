@@ -1,0 +1,74 @@
+/* sans */
+@font-face {
+    font-family: "Archivo";
+    src: url("/assets/fonts/Archivo-VariableFont.ttf");
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Archivo";
+    src: url("/assets/fonts/Archivo-Italic-VariableFont.ttf");
+    font-display: swap;
+    font-style: italic;
+}
+
+/* variant */
+
+@font-face {
+    font-family: "Barlow";
+    src: url("/assets/fonts/Barlow-Regular.ttf");
+    font-display: swap;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Barlow";
+    src: url("/assets/fonts/Barlow-Medium.ttf");
+    font-display: swap;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Barlow";
+    src: url("/assets/fonts/Barlow-SemiBold.ttf");
+    font-display: swap;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Barlow";
+    src: url("/assets/fonts/Barlow-Bold.ttf");
+    font-display: swap;
+    font-weight: 700;
+}
+
+/* variant-condensed */
+
+@font-face {
+    font-family: "BarlowCondensed";
+    src: url("/assets/fonts/BarlowCondensed-Regular.ttf");
+    font-display: swap;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "BarlowCondensed";
+    src: url("/assets/fonts/BarlowCondensed-Medium.ttf");
+    font-display: swap;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "BarlowCondensed";
+    src: url("/assets/fonts/BarlowCondensed-SemiBold.ttf");
+    font-display: swap;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "BarlowCondensed";
+    src: url("/assets/fonts/BarlowCondensed-Bold.ttf");
+    font-display: swap;
+    font-weight: 700;
+}
