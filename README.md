@@ -9,11 +9,9 @@ Check the /assets folder for logos and font files.
 
 ## Design
 
-You'll find a .sketch and a .PDF version with design specs.
+You'll find the design system in Figma:
 
-### Figma
-
-https://www.figma.com/design/aen3pQ5270lRll444VI7TQ/HOTOSM-UI
+[https://www.figma.com/design/aen3pQ5270lRll444VI7TQ/HOTOSM-UI](https://www.figma.com/community/file/1481372694323405983)
 
 ## CSS
 
