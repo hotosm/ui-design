@@ -13,7 +13,7 @@ Check `/pdf` folder for design.
 
 ### Figma
 
-[https://www.figma.com/design/aen3pQ5270lRll444VI7TQ/HOTOSM-UI](https://www.figma.com/community/file/1481372694323405983)
+[Check the Figma files](https://www.figma.com/design/1i7QtxacGpUp5dchd6DQTB/hotosm-ui-design-v0%E2%80%A42?m=auto&t=TD5gEf36gZTs7BIe-1)
 
 ## CSS
 
