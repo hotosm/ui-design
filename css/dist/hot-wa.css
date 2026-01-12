@@ -334,18 +334,18 @@ https://cdn.jsdelivr.net/npm/hotosm-ui-design@latest/dist/hot-wa.css
       var(--hot-color-neutral-950) calc(var(--wa-shadow-blur-scale) * 4% + 8%),
       transparent
     );
-    --wa-color-focus: var(--hot-color-primary-400);
-    --wa-color-mix-hover: black 10%;
-    --wa-color-mix-active: black 20%;
+    --wa-color-focus: var(--hot-color-primary-950);
+    --wa-color-mix-hover: white 10%;
+    --wa-color-mix-active: white 20%;
 
     --wa-color-brand-fill-quiet: var(--hot-color-primary-50);
-    --wa-color-brand-fill-normal: var(--hot-color-primary-50);
-    --wa-color-brand-fill-loud: var(--hot-color-primary-600);
-    --wa-color-brand-border-quiet: var(--hot-color-primary-100);
-    --wa-color-brand-border-normal: var(--hot-color-primary-100);
-    --wa-color-brand-border-loud: var(--hot-color-primary-400);
-    --wa-color-brand-on-quiet: var(--hot-color-blprimaryue-700);
-    --wa-color-brand-on-normal: var(--hot-color-primary-700);
+    --wa-color-brand-fill-normal: var(--hot-color-primary-950);
+    --wa-color-brand-fill-loud: var(--hot-color-primary-1000);
+    --wa-color-brand-border-quiet: var(--hot-color-primary-900);
+    --wa-color-brand-border-normal: var(--hot-color-primary-950);
+    --wa-color-brand-border-loud: var(--hot-color-primary-1000);
+    --wa-color-brand-on-quiet: var(--hot-color-primary-950);
+    --wa-color-brand-on-normal: var(--hot-color-primary-900);
     --wa-color-brand-on-loud: white;
 
     --wa-color-success-fill-quiet: var(--hot-color-success-50);
