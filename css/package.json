@@ -1,0 +1,22 @@
+{
+  "name": "hotosm-ui-design",
+  "version": "1.1.0",
+  "description": "CSS files packaged for NPM",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "style": "dist/hot.css",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "css",
+    "stylesheet",
+    "scss"
+  ],
+  "author": "Emilio Mariscal <emilio.mariscal@hotosm.org>",
+  "license": "AGPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hotosm/ui-design.git"
+  }
+}
