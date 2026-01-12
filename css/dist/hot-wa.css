@@ -309,8 +309,8 @@ https://cdn.jsdelivr.net/npm/hotosm-ui-design@latest/dist/hot-wa.css
     color-scheme: light;
     color: var(--wa-color-text-normal);
 
-    --wa-color-surface-raised: white;
-    --wa-color-surface-default: white;
+    --wa-color-surface-raised: var(--hot-color-neutral-0);
+    --wa-color-surface-default: var(--hot-color-neutral-0);
     --wa-color-surface-lowered: var(--hot-color-neutral-50);
     --wa-color-surface-border: var(--hot-color-neutral-100);
 
@@ -335,18 +335,20 @@ https://cdn.jsdelivr.net/npm/hotosm-ui-design@latest/dist/hot-wa.css
       transparent
     );
     --wa-color-focus: var(--hot-color-primary-950);
-    --wa-color-mix-hover: white 10%;
-    --wa-color-mix-active: white 20%;
+    --wa-color-mix-hover: var(--hot-color-neutral-0) 10%;
+    --wa-color-mix-active: var(--hot-color-neutral-0) 20%;
 
     --wa-color-brand-fill-quiet: var(--hot-color-primary-50);
     --wa-color-brand-fill-normal: var(--hot-color-primary-950);
     --wa-color-brand-fill-loud: var(--hot-color-primary-1000);
+
     --wa-color-brand-border-quiet: var(--hot-color-primary-900);
     --wa-color-brand-border-normal: var(--hot-color-primary-950);
     --wa-color-brand-border-loud: var(--hot-color-primary-1000);
+
     --wa-color-brand-on-quiet: var(--hot-color-primary-950);
-    --wa-color-brand-on-normal: var(--hot-color-primary-900);
-    --wa-color-brand-on-loud: white;
+    --wa-color-brand-on-normal: var(--hot-color-neutral-0);
+    --wa-color-brand-on-loud: var(--hot-color-neutral-0);
 
     --wa-color-success-fill-quiet: var(--hot-color-success-50);
     --wa-color-success-fill-normal: var(--hot-color-success-100);
@@ -356,27 +358,27 @@ https://cdn.jsdelivr.net/npm/hotosm-ui-design@latest/dist/hot-wa.css
     --wa-color-success-border-loud: var(--hot-color-success-700);
     --wa-color-success-on-quiet: var(--hot-color-success-800);
     --wa-color-success-on-normal: var(--hot-color-success-800);
-    --wa-color-success-on-loud: white;
+    --wa-color-success-on-loud: var(--hot-color-neutral-0);
 
     --wa-color-warning-fill-quiet: var(--hot-color-warning-50);
     --wa-color-warning-fill-normal: var(--hot-color-warning-100);
-    --wa-color-warning-fill-loud: var(--hot-color-warning-950);
+    --wa-color-warning-fill-loud: var(--hot-color-warning-700);
     --wa-color-warning-border-quiet: var(--hot-color-warning-100);
-    --wa-color-warning-border-normal: var(--hot-color-warning-950);
-    --wa-color-warning-border-loud: var(--hot-color-warning-950);
+    --wa-color-warning-border-normal: var(--hot-color-warning-700);
+    --wa-color-warning-border-loud: var(--hot-color-warning-700);
     --wa-color-warning-on-quiet: var(--hot-color-warning-950);
     --wa-color-warning-on-normal: var(--hot-color-warning-950);
-    --wa-color-warning-on-loud: white;
+    --wa-color-warning-on-loud: var(--hot-color-neutral-0);
 
-    --wa-color-danger-fill-quiet: var(--hot-color-danger-50);
+    --wa-color-danger-fill-quiet: var(--hot-color-danger-100);
     --wa-color-danger-fill-normal: var(--hot-color-danger-100);
-    --wa-color-danger-fill-loud: var(--hot-color-danger-500);
+    --wa-color-danger-fill-loud: var(--hot-color-danger-700);
     --wa-color-danger-border-quiet: var(--hot-color-danger-100);
-    --wa-color-danger-border-normal: var(--hot-color-danger-950);
-    --wa-color-danger-border-loud: var(--hot-color-danger-500);
-    --wa-color-danger-on-quiet: var(--hot-color-danger-950);
-    --wa-color-danger-on-normal: var(--hot-color-danger-950);
-    --wa-color-danger-on-loud: white;
+    --wa-color-danger-border-normal: var(--hot-color-danger-100);
+    --wa-color-danger-border-loud: var(--hot-color-danger-700);
+    --wa-color-danger-on-quiet: var(--hot-color-danger-700);
+    --wa-color-danger-on-normal: var(--hot-color-danger-700);
+    --wa-color-danger-on-loud: var(--hot-color-neutral-0);
 
     --wa-color-neutral-fill-quiet: var(--hot-color-neutral-50);
     --wa-color-neutral-fill-normal: var(--hot-color-neutral-100);
@@ -386,6 +388,6 @@ https://cdn.jsdelivr.net/npm/hotosm-ui-design@latest/dist/hot-wa.css
     --wa-color-neutral-border-loud: var(--hot-color-neutral-400);
     --wa-color-neutral-on-quiet: var(--hot-color-neutral-950);
     --wa-color-neutral-on-normal: var(--hot-color-neutral-950);
-    --wa-color-neutral-on-loud: white;
+    --wa-color-neutral-on-loud: var(--hot-color-neutral-0);
   }
 }
