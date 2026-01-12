@@ -22,9 +22,9 @@ for common frameworks like Shoelace and Web Awesome.
 
 All CSS files are available in a CDN:
 
-https://cdn.jsdelivr.net/npm/hotosm-ui-design@1.1.0/dist/hot.css
-https://cdn.jsdelivr.net/npm/hotosm-ui-design@1.1.0/dist/hot-sl.css
-https://cdn.jsdelivr.net/npm/hotosm-ui-design@1.1.0/dist/hot-font-face.css
+* https://cdn.jsdelivr.net/npm/hotosm-ui-design@1.1.0/dist/hot.css
+* https://cdn.jsdelivr.net/npm/hotosm-ui-design@1.1.0/dist/hot-sl.css
+* https://cdn.jsdelivr.net/npm/hotosm-ui-design@1.1.0/dist/hot-font-face.css
 
 And you can also install the NPM package:
 
