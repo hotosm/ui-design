@@ -168,13 +168,11 @@
    */
 
   /* Fonts */
-  --hot-font-sans: Archivo, -apple-system, Roboto, Helvetica, Arial, sans-serif,
-  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  --hot-font-sans-variant: 'Barlow';
-  --hot-font-sans-variant-condensed: 'Barlow Condensed';
-  --hot-font-sefif: Georgia, 'Times New Roman', serif;
-  --hot-font-mono: Menlo, Monaco, Consolas, 'Courier New',
-  monospace, Consolas, 'Liberation Mono', Menlo, monospace;
+  --hot-font-sans: Archivo, Helvetica, Noto, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif, system-ui;
+  --hot-font-sans-variant: 'Barlow', Helvetica, Noto, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif, system-ui;
+  --hot-font-sans-variant-condensed: 'Barlow Condensed', Helvetica, Noto, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif, system-ui;
+  --hot-font-sans-sefif: Georgia, 'Times New Roman', 'Noto Sans', serif, system-ui;
+  --hot-font-mono: Menlo, Monaco, Consolas, 'Courier New', monospace, Consolas, 'Liberation Mono', Menlo, system-ui;
 
   /* Font sizes */
   --hot-font-size-2x-small: 0.625rem; /* 10px */
