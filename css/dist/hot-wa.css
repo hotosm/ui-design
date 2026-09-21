@@ -238,7 +238,7 @@ https://cdn.jsdelivr.net/npm/hotosm-ui-design@latest/dist/hot-wa.css
     --wa-font-family-body: var(--hot-font-sans);
     --wa-font-family-heading: var(--hot-font-sans-variant);
     --wa-font-family-code: var(--hot-font-mono);
-    --wa-font-family-longform: var(--hot-font-sefif);
+    --wa-font-family-longform: var(--hot-font-serif);
 
     /* Font sizes */
     --wa-font-size-2xs: var(--hot-font-size-2x-small); /* 10px */
