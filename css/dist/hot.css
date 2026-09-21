@@ -168,7 +168,7 @@
    */
 
   /* Fonts */
-  --hot-font-sans: Archivo, Helvetica, Noto, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif, system-ui;
+  --hot-font-sans: 'Archivo', Helvetica, Noto, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif, system-ui;
   --hot-font-sans-variant: 'Barlow', Helvetica, Noto, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif, system-ui;
   --hot-font-sans-variant-condensed: 'Barlow Condensed', Helvetica, Noto, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif, system-ui;
   --hot-font-serif: Georgia, 'Times New Roman', 'Noto Sans', serif, system-ui;
