@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Compatibility Test</title>
+    
+    <!-- Importing Archivo and Barlow from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Barlow:wght@400;700&family=Noto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f4f9;
+            padding: 40px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .test-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-left: 5px solid #ccc;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 0.9rem;
+            color: #666;
+            text-transform: uppercase;
+        }
+
+        /* Font Classes */
+        .font-sans {
+            font-family: 'Archivo', Helvetica, Noto, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif, system-ui;
+        }
+
+        .font-sans-variant {
+            font-family: 'Barlow', Helvetica, Noto, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif, system-ui;
+        }
+
+        .font-serif {
+            font-family: Georgia, 'Times New Roman', 'Noto Sans', serif, system-ui;
+        }
+
+        .test-label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+        .sample-text {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Font Compatibility Test</h1>
+
+    <div class="test-container" id="test-grid">
+        <!-- JavaScript will populate this to keep the HTML clean -->
+    </div>
+
+    <script>
+        const translations = [
+            { lang: "English (Latin)", text: "The quick brown fox jumps over the lazy dog.🐕" },
+            { lang: "Russian (Cyrillic)", text: "Быстрая коричневая лиса прыгает через ленивую собаку.🐕" },
+            { lang: "Arabic", text: "الثعلب البني السريع يقفز فوق الكلب الكسول.🐕" },
+            { lang: "Hindi (Devanagari)", text: "तेज़ भूरी लोमड़ी सुस्त कुत्ते के ऊपर से कूदती है।🐕" },
+            { lang: "Thai", text: "สุนัขจิ้งจอกสีน้ำตาลที่รวดเร็วกระโดดข้ามสุนัขที่ขี้เกียจ🐕" },
+            { lang: "Chinese (Simplified)", text: "敏捷的棕色狐狸跳过那只懒惰的狗。🐕" },
+            { lang: "Japanese (Kanji/Kana)", text: "素早い茶色の狐が怠惰な犬を飛び越える。🐕" },
+            { lang: "Korean (Hangul)", text: "빠른 갈색 여우가 게으른 개를 뛰어넘습니다.🐕" },
+            { lang: "Greek", text: "Η γρήγορη καφέ αλεπού πηδά πάνω από τον τεμπανό σκύλο.🐕" },
+            { lang: "Hebrew", text: "השועל החום המהיר קופץ מעל הכלב העצלן.🐕" },
+            { lang: "Bengali", text: "দ্রুত বাদামী শেয়াল অলস কুকুরের উপর দিয়ে লাফ দেয়।🐕" },
+            { lang: "Gujarati", text: "ઝડપી કથ્થઈ કૂતરા પરથી કૂદકો મારે છે.🐕" },
+            { lang: "Tamil", text: "வேகமான பழுப்பு நரி சோம்பேறியான நாயின் மேல் குதிக்கிறது.🐕" },
+            { lang: "Telugu", text: "వేగవంతమైన గోధుమ రంగు నక్క సోమరి కుక్క పై నుండి దూకుతుంది.🐕" },
+            { lang: "Amharic", text: "ፈጣኑ ቡኒማ ቀለም ያለው ቀበሮ በሰነፍ ውሻ ላይ ይዘላል።🐕" },
+            { lang: "Georgian", text: "სწრაფი ყავისფერი მელა ზარმაცი ძაღლს გადახტება.🐕" },
+            { lang: "Armenian", text: "Արագ շագանակագույն աղվեսը ցատկում է ծույլ շանուիկի վրայով:🐕" },
+            { lang: "Tibetan", text: "མགྱོགས་པའི་སྨད་ពណ៌ཀྱི་ཤিয়ালལ་བདེ་བའི་ឆང་གི་སྟེང་ལ་འཕገར་བུ་འཕེལ་གྱི་ཡོད་དེ།🐕" },
+            { lang: "Khmer", text: "ខ្លាពណ៌ត្នោតដ៏លឿនបានលោតពីលើឆ្កែខ្ជិល।🐕" },
+            { lang: "Lao", text: "ສີກາສີນ້ຳຕານທີ່ວ່ອງໄວໂດດຂ້າມໝາທີ່ຂີ້ຄ້ານ.🐕" },
+            { lang: "Burmese", text: "မြန်ဆန်သော အညိုရောင်မြေခွေးသည် ပျင်းယောင်းသောခွေးကိုကျော်သည်။🐕" },
+            { lang: "Sinhala", text: "වේගවත් දුඹුරු වලසා කම්මැලි බල්ලාගේ උඩින් පනිනවා.🐕" },
+            { lang: "Malayalam", text: "വേഗത്തിലുള്ള തവിട്ട് നിറമുള്ള നായ മടിയനായന് മുകളിലൂടെ ചാടുന്നു.🐕" },
+            { lang: "Kannada", text: "ವೇಗದ ಕಂದು ಬಣ್ಣದ ನರಿ ಸೋಮಾರಿ ನಾಯದ ಮೇಲೆ ಛಲಾಯುತ್ತದೆ.🐕" },
+            { lang: "Odia", text: "ଦ୍ରୁତ ବଡ଼ିଆ ରଙ୍ଗର ଶিয়াল অলସ ତା'ର କୁକୁର ଉପରେ ଡେଇଁ যায়।🐕" },
+            { lang: "Punjabi (Gurmukhi)", text: "ਤੇਜ਼ ਭੂਰੇ ਰੰਗ ਦਾ ਲੂੰਬੜੀ ਆਲਸੀ ਕੁੱਤੇ ਦੇ ਉੱਤੇથી ਛਾਲ ਮਾਰਦਾ ਹੈ।🐕" },
+            { lang: "Urdu", text: "تیز بھور لومڑی سست کتے کے اوپر سے کودتا ہے۔🐕" },
+            { lang: "Persian", text: "روباه قهوه‌ای سریع از روی سگ تنبل می‌پرد.🐕" },
+            { lang: "Vietnamese", text: "Con cáo nâu nhanh nhẹn nhảy qua con chó lười biếng.🐕" }
+        ];
+
+        const grid = document.getElementById('test-grid');
+
+        translations.forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.innerHTML = `
+                <h3>${item.lang}</h3>
+                <div>
+                    <span class="test-label">Sans:</span>
+                    <div class="sample-text font-sans">${item.text}</div>
+                </div>
+                <div style="margin-top:15px; border-top:1px solid #eee; padding-top:10px;"></div>
+                <div>
+                    <span class="test-label">Sans Variant:</span>
+                    <div class="sample-text font-sans-variant">${item.text}</div>
+                </div>
+                <div style="margin-top:15px; border-top:1px solid #eee; padding-top:10px;"></div>
+                <div>
+                    <span class="test-label">Serif:</span>
+                    <div class="sample-text font-serif">${item.text}</div>
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+    </script>
+</body>
+</html>
